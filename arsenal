@@ -1,0 +1,588 @@
+local TohMoonHub = Instance.new("ScreenGui")
+local Main = Instance.new("ImageLabel")
+local ScriptsButton = Instance.new("TextButton")
+local GamesButton = Instance.new("TextButton")
+local DevelopedBy = Instance.new("TextLabel")
+local CreditsButton = Instance.new("TextButton")
+local Scripts = Instance.new("Frame")
+local Keybind = Instance.new("ImageLabel")
+local KeybindKey = Instance.new("TextLabel")
+local Fling = Instance.new("TextButton")
+local Flight = Instance.new("TextButton")
+local Keybind_2 = Instance.new("ImageLabel")
+local KeybindKey_2 = Instance.new("TextLabel")
+local Chat_Bot = Instance.new("TextButton")
+local Keybind_3 = Instance.new("ImageLabel")
+local KeybindKey_3 = Instance.new("TextLabel")
+local Games = Instance.new("Frame")
+local ListOfGamesTitle = Instance.new("TextLabel")
+local One = Instance.new("TextLabel")
+local Two = Instance.new("TextLabel")
+local Three = Instance.new("TextLabel")
+local Four = Instance.new("TextLabel")
+local Credits = Instance.new("Frame")
+local CreditsTitle = Instance.new("TextLabel")
+local UIMade = Instance.new("TextLabel")
+local ScriptsMade = Instance.new("TextLabel")
+local Everything = Instance.new("TextLabel")
+local Top = Instance.new("TextLabel")
+local Top_Roundify_12px = Instance.new("ImageLabel")
+local Left = Instance.new("TextLabel")
+local Right = Instance.new("TextLabel")
+local Title = Instance.new("TextLabel")
+local Exit = Instance.new("TextButton")
+local Exit_Roundify_12px = Instance.new("ImageLabel")
+local HomeScreen = Instance.new("Frame")
+local WarningTitle = Instance.new("TextLabel")
+local Warning = Instance.new("TextLabel")
+
+--Properties:
+
+TohMoonHub.Name = "TohMoonHub"
+TohMoonHub.Parent = game.CoreGui
+
+Main.Name = "Main"
+Main.Parent = TohMoonHub
+Main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main.BackgroundTransparency = 1.000
+Main.Position = UDim2.new(0.382807672, 0, 0.351351351, 0)
+Main.Selectable = true
+Main.Size = UDim2.new(0, 378, 0, 242)
+Main.Image = "rbxassetid://3570695787"
+Main.ScaleType = Enum.ScaleType.Slice
+Main.SliceCenter = Rect.new(100, 100, 100, 100)
+Main.SliceScale = 0.120
+Main.Active = true
+Main.Draggable = true
+
+ScriptsButton.Name = "ScriptsButton"
+ScriptsButton.Parent = Main
+ScriptsButton.BackgroundColor3 = Color3.fromRGB(245, 245, 245)
+ScriptsButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+ScriptsButton.BorderSizePixel = 0
+ScriptsButton.Position = UDim2.new(0, 0, 0.223140493, 0)
+ScriptsButton.Size = UDim2.new(0, 123, 0, 40)
+ScriptsButton.Font = Enum.Font.SourceSansLight
+ScriptsButton.Text = "Scripts"
+ScriptsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScriptsButton.TextScaled = true
+ScriptsButton.TextSize = 14.000
+ScriptsButton.TextWrapped = true
+ScriptsButton.MouseButton1Down:Connect(function()
+	Scripts.Visible = true
+	Games.Visible = false
+	Credits.Visible = false
+	HomeScreen.Visible = false
+end)
+
+GamesButton.Name = "GamesButton"
+GamesButton.Parent = Main
+GamesButton.BackgroundColor3 = Color3.fromRGB(245, 245, 245)
+GamesButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+GamesButton.BorderSizePixel = 0
+GamesButton.Position = UDim2.new(0, 0, 0.388429761, 0)
+GamesButton.Size = UDim2.new(0, 123, 0, 40)
+GamesButton.Font = Enum.Font.SourceSansLight
+GamesButton.Text = "Games"
+GamesButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+GamesButton.TextScaled = true
+GamesButton.TextSize = 14.000
+GamesButton.TextWrapped = true
+GamesButton.MouseButton1Down:Connect(function()
+	Scripts.Visible = false
+	Games.Visible = true
+	Credits.Visible = false
+	HomeScreen.Visible = false
+end)
+
+DevelopedBy.Name = "DevelopedBy"
+DevelopedBy.Parent = Main
+DevelopedBy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DevelopedBy.BackgroundTransparency = 1.000
+DevelopedBy.Position = UDim2.new(0, 0, 0.719008207, 0)
+DevelopedBy.Size = UDim2.new(0, 123, 0, 17)
+DevelopedBy.Font = Enum.Font.SourceSansLight
+DevelopedBy.Text = "Made by, vil"
+DevelopedBy.TextColor3 = Color3.fromRGB(0, 0, 0)
+DevelopedBy.TextScaled = true
+DevelopedBy.TextSize = 14.000
+DevelopedBy.TextWrapped = true
+
+CreditsButton.Name = "CreditsButton"
+CreditsButton.Parent = Main
+CreditsButton.BackgroundColor3 = Color3.fromRGB(245, 245, 245)
+CreditsButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+CreditsButton.BorderSizePixel = 0
+CreditsButton.Position = UDim2.new(0, 0, 0.553719044, 0)
+CreditsButton.Size = UDim2.new(0, 123, 0, 40)
+CreditsButton.Font = Enum.Font.SourceSansLight
+CreditsButton.Text = "Credits"
+CreditsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+CreditsButton.TextScaled = true
+CreditsButton.TextSize = 14.000
+CreditsButton.TextWrapped = true
+CreditsButton.MouseButton1Down:Connect(function()
+	Scripts.Visible = false
+	Games.Visible = false
+	Credits.Visible = true
+	HomeScreen.Visible = false
+end)
+
+Scripts.Name = "Scripts"
+Scripts.Parent = Main
+Scripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scripts.BackgroundTransparency = 1.000
+Scripts.Position = UDim2.new(0, 0, 0.223140493, 0)
+Scripts.Size = UDim2.new(0, 378, 0, 188)
+Scripts.Visible = false
+
+Keybind.Name = "Keybind"
+Keybind.Parent = Scripts
+Keybind.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Keybind.BackgroundTransparency = 1.000
+Keybind.Position = UDim2.new(0.648148179, 0, 0.319148928, 0)
+Keybind.Size = UDim2.new(0, 34, 0, 33)
+Keybind.Image = "http://www.roblox.com/asset/?id=5822320131"
+
+KeybindKey.Name = "KeybindKey"
+KeybindKey.Parent = Keybind
+KeybindKey.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KeybindKey.BackgroundTransparency = 1.000
+KeybindKey.Position = UDim2.new(0, 0, 0.060606122, 0)
+KeybindKey.Size = UDim2.new(0, 34, 0, 33)
+KeybindKey.Font = Enum.Font.SourceSansLight
+KeybindKey.Text = "..."
+KeybindKey.TextColor3 = Color3.fromRGB(0, 0, 0)
+KeybindKey.TextSize = 14.000
+KeybindKey.TextWrapped = true
+
+Fling.Name = "Fling"
+Fling.Parent = Scripts
+Fling.BackgroundColor3 = Color3.fromRGB(245, 245, 245)
+Fling.BorderSizePixel = 0
+Fling.Position = UDim2.new(0.367724866, 0, 0.308510631, 0)
+Fling.Size = UDim2.new(0, 99, 0, 37)
+Fling.Font = Enum.Font.SourceSansLight
+Fling.Text = "Fling"
+Fling.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fling.TextScaled = true
+Fling.TextSize = 14.000
+Fling.TextWrapped = true
+Fling.MouseButton1Down:Connect(function()
+	power = 2000
+
+	game:GetService('RunService').Stepped:connect(function()
+		game.Players.LocalPlayer.Character.Head.CanCollide = false
+		game.Players.LocalPlayer.Character.Torso.CanCollide = false
+		game.Players.LocalPlayer.Character["Left Leg"].CanCollide = false
+		game.Players.LocalPlayer.Character["Right Leg"].CanCollide = false
+	end)
+
+	wait(.1)
+	local bambam = Instance.new("BodyThrust")
+	bambam.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
+	bambam.Force = Vector3.new(power,0,power)
+	bambam.Location = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+end)
+
+Flight.Name = "Flight"
+Flight.Parent = Scripts
+Flight.BackgroundColor3 = Color3.fromRGB(245, 245, 245)
+Flight.BorderSizePixel = 0
+Flight.Position = UDim2.new(0.367724866, 0, 0.0478723422, 0)
+Flight.Size = UDim2.new(0, 99, 0, 37)
+Flight.Font = Enum.Font.SourceSansLight
+Flight.Text = "Flight"
+Flight.TextColor3 = Color3.fromRGB(0, 0, 0)
+Flight.TextScaled = true
+Flight.TextSize = 14.000
+Flight.TextWrapped = true
+Flight.MouseButton1Down:Connect(function()
+	-- //~ F to toggle ~\\ --
+
+	_G.infinjump = true
+
+	local Player = game:GetService("Players").LocalPlayer
+	local Mouse = Player:GetMouse()
+	Mouse.KeyDown:connect(function(k)
+		if _G.infinjump then
+			if k:byte() == 32 then
+				Humanoid = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+				Humanoid:ChangeState("Jumping")
+				wait(0.1)
+				Humanoid:ChangeState("Seated")
+			end
+		end
+	end)
+
+	local Player = game:GetService("Players").LocalPlayer
+	local Mouse = Player:GetMouse()
+	Mouse.KeyDown:connect(function(k)
+		k = k:lower()
+		if k == "f" then
+			if _G.infinjump == true then
+				_G.infinjump = false
+			else
+				_G.infinjump = true
+			end
+		end
+	end)
+end)
+
+Keybind_2.Name = "Keybind"
+Keybind_2.Parent = Scripts
+Keybind_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Keybind_2.BackgroundTransparency = 1.000
+Keybind_2.Position = UDim2.new(0.648148179, 0, 0.0585106388, 0)
+Keybind_2.Size = UDim2.new(0, 34, 0, 33)
+Keybind_2.Image = "http://www.roblox.com/asset/?id=5822320131"
+
+KeybindKey_2.Name = "KeybindKey"
+KeybindKey_2.Parent = Keybind_2
+KeybindKey_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KeybindKey_2.BackgroundTransparency = 1.000
+KeybindKey_2.Position = UDim2.new(0, 0, -0.0606060624, 0)
+KeybindKey_2.Size = UDim2.new(0, 34, 0, 31)
+KeybindKey_2.Font = Enum.Font.SourceSansLight
+KeybindKey_2.Text = "F"
+KeybindKey_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+KeybindKey_2.TextScaled = true
+KeybindKey_2.TextSize = 14.000
+KeybindKey_2.TextWrapped = true
+
+Chat_Bot.Name = "Chat_Bot"
+Chat_Bot.Parent = Scripts
+Chat_Bot.BackgroundColor3 = Color3.fromRGB(245, 245, 245)
+Chat_Bot.BorderSizePixel = 0
+Chat_Bot.Position = UDim2.new(0.367724866, 0, 0.585106373, 0)
+Chat_Bot.Size = UDim2.new(0, 99, 0, 37)
+Chat_Bot.Font = Enum.Font.SourceSansLight
+Chat_Bot.Text = "Chat Bot"
+Chat_Bot.TextColor3 = Color3.fromRGB(0, 0, 0)
+Chat_Bot.TextScaled = true
+Chat_Bot.TextSize = 14.000
+Chat_Bot.TextWrapped = true
+Chat_Bot.MouseButton1Down:Connect(function()
+	local messages = {
+		"[Moon Hub] Download Moon Hub today to be pro.";
+		"[Moon Hub] Moon Hub is free to download, go get it for epic hax.";
+		"[Moon Hub] I have the best free hub out there.";
+		"[Moon Hub] Did you know Moon Hub can defeat you? ofcourse it can!";
+	};
+
+	local d=false spawn(function() while not d do local c=wait local b=print local a=game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents").SayMessageRequest c(1) b(string.reverse("taoG yb detaerC toB-tahC")) for i,v in pairs(messages) do if not d then a:FireServer(v, "All") print(d) c(3) elseif d then break end end end end) local p=game:GetService("Players").LocalPlayer p.Character.Humanoid.Died:connect(function() d=true end)
+end)
+
+Keybind_3.Name = "Keybind"
+Keybind_3.Parent = Scripts
+Keybind_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Keybind_3.BackgroundTransparency = 1.000
+Keybind_3.Position = UDim2.new(0.648148179, 0, 0.595744669, 0)
+Keybind_3.Size = UDim2.new(0, 34, 0, 33)
+Keybind_3.Image = "http://www.roblox.com/asset/?id=5822320131"
+
+KeybindKey_3.Name = "KeybindKey"
+KeybindKey_3.Parent = Keybind_3
+KeybindKey_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KeybindKey_3.BackgroundTransparency = 1.000
+KeybindKey_3.Position = UDim2.new(0, 0, 0.060606122, 0)
+KeybindKey_3.Size = UDim2.new(0, 34, 0, 33)
+KeybindKey_3.Font = Enum.Font.SourceSansLight
+KeybindKey_3.Text = "..."
+KeybindKey_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+KeybindKey_3.TextSize = 14.000
+KeybindKey_3.TextWrapped = true
+
+Games.Name = "Games"
+Games.Parent = Main
+Games.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Games.BackgroundTransparency = 1.000
+Games.Position = UDim2.new(0, 0, 0.223140493, 0)
+Games.Size = UDim2.new(0, 378, 0, 188)
+Games.Visible = false
+
+ListOfGamesTitle.Name = "ListOfGamesTitle"
+ListOfGamesTitle.Parent = Games
+ListOfGamesTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ListOfGamesTitle.BackgroundTransparency = 1.000
+ListOfGamesTitle.Position = UDim2.new(0.346560836, 0, 0.0212765951, 0)
+ListOfGamesTitle.Size = UDim2.new(0, 234, 0, 26)
+ListOfGamesTitle.Font = Enum.Font.SourceSansLight
+ListOfGamesTitle.Text = "LIST OF GAMES"
+ListOfGamesTitle.TextColor3 = Color3.fromRGB(0, 0, 0)
+ListOfGamesTitle.TextScaled = true
+ListOfGamesTitle.TextSize = 14.000
+ListOfGamesTitle.TextWrapped = true
+
+One.Name = "One"
+One.Parent = Games
+One.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+One.BackgroundTransparency = 1.000
+One.Position = UDim2.new(0.346560836, 0, 0.186170205, 0)
+One.Size = UDim2.new(0, 234, 0, 17)
+One.Font = Enum.Font.SourceSansLight
+One.Text = "-Tower Of Hell"
+One.TextColor3 = Color3.fromRGB(0, 0, 0)
+One.TextSize = 14.000
+One.TextXAlignment = Enum.TextXAlignment.Left
+
+Two.Name = "Two"
+Two.Parent = Games
+Two.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Two.BackgroundTransparency = 1.000
+Two.Position = UDim2.new(0.346560836, 0, 0.276595742, 0)
+Two.Size = UDim2.new(0, 234, 0, 17)
+Two.Font = Enum.Font.SourceSansLight
+Two.Text = "-Jailbreak"
+Two.TextColor3 = Color3.fromRGB(0, 0, 0)
+Two.TextSize = 14.000
+Two.TextXAlignment = Enum.TextXAlignment.Left
+
+Three.Name = "Three"
+Three.Parent = Games
+Three.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Three.BackgroundTransparency = 1.000
+Three.Position = UDim2.new(0.346560836, 0, 0.367021263, 0)
+Three.Size = UDim2.new(0, 234, 0, 17)
+Three.Font = Enum.Font.SourceSansLight
+Three.Text = "-Arsenal"
+Three.TextColor3 = Color3.fromRGB(0, 0, 0)
+Three.TextSize = 14.000
+Three.TextXAlignment = Enum.TextXAlignment.Left
+
+Four.Name = "Four"
+Four.Parent = Games
+Four.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Four.BackgroundTransparency = 1.000
+Four.Position = UDim2.new(0.346560836, 0, 0.457446784, 0)
+Four.Size = UDim2.new(0, 234, 0, 17)
+Four.Font = Enum.Font.SourceSansLight
+Four.Text = "-Murder Mystery, Shinobi Life 2, Impostor"
+Four.TextColor3 = Color3.fromRGB(0, 0, 0)
+Four.TextSize = 14.000
+Four.TextXAlignment = Enum.TextXAlignment.Left
+
+Credits.Name = "Credits"
+Credits.Parent = Main
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.Position = UDim2.new(0, 0, 0.223140493, 0)
+Credits.Size = UDim2.new(0, 378, 0, 188)
+Credits.Visible = false
+
+CreditsTitle.Name = "CreditsTitle"
+CreditsTitle.Parent = Credits
+CreditsTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CreditsTitle.BackgroundTransparency = 1.000
+CreditsTitle.Position = UDim2.new(0.346560836, 0, 0.0212765951, 0)
+CreditsTitle.Size = UDim2.new(0, 234, 0, 26)
+CreditsTitle.Font = Enum.Font.SourceSansLight
+CreditsTitle.Text = "CREDITS"
+CreditsTitle.TextColor3 = Color3.fromRGB(0, 0, 0)
+CreditsTitle.TextScaled = true
+CreditsTitle.TextSize = 14.000
+CreditsTitle.TextWrapped = true
+
+UIMade.Name = "UIMade"
+UIMade.Parent = Credits
+UIMade.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UIMade.BackgroundTransparency = 1.000
+UIMade.Position = UDim2.new(0.346560836, 0, 0.186170205, 0)
+UIMade.Size = UDim2.new(0, 234, 0, 17)
+UIMade.Font = Enum.Font.SourceSansLight
+UIMade.Text = "-UI Made by vil"
+UIMade.TextColor3 = Color3.fromRGB(0, 0, 0)
+UIMade.TextSize = 14.000
+UIMade.TextXAlignment = Enum.TextXAlignment.Left
+
+ScriptsMade.Name = "ScriptsMade"
+ScriptsMade.Parent = Credits
+ScriptsMade.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptsMade.BackgroundTransparency = 1.000
+ScriptsMade.Position = UDim2.new(0.346560836, 0, 0.271276593, 0)
+ScriptsMade.Size = UDim2.new(0, 234, 0, 17)
+ScriptsMade.Font = Enum.Font.SourceSansLight
+ScriptsMade.Text = "-Scripts made by vil"
+ScriptsMade.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScriptsMade.TextSize = 14.000
+ScriptsMade.TextXAlignment = Enum.TextXAlignment.Left
+
+Everything.Name = "Everything"
+Everything.Parent = Credits
+Everything.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Everything.BackgroundTransparency = 1.000
+Everything.Position = UDim2.new(0.346560836, 0, 0.361702114, 0)
+Everything.Size = UDim2.new(0, 234, 0, 17)
+Everything.Font = Enum.Font.SourceSansLight
+Everything.Text = "-Everything made  by vil"
+Everything.TextColor3 = Color3.fromRGB(0, 0, 0)
+Everything.TextSize = 14.000
+Everything.TextXAlignment = Enum.TextXAlignment.Left
+
+Top.Name = "Top"
+Top.Parent = Main
+Top.BackgroundColor3 = Color3.fromRGB(239, 239, 239)
+Top.BackgroundTransparency = 1.000
+Top.BorderSizePixel = 0
+Top.Size = UDim2.new(0, 378, 0, 54)
+Top.Font = Enum.Font.SourceSans
+Top.Text = " "
+Top.TextColor3 = Color3.fromRGB(0, 0, 0)
+Top.TextSize = 14.000
+
+Top_Roundify_12px.Name = "Top_Roundify_12px"
+Top_Roundify_12px.Parent = Top
+Top_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+Top_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Top_Roundify_12px.BackgroundTransparency = 1.000
+Top_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+Top_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+Top_Roundify_12px.Image = "rbxassetid://3570695787"
+Top_Roundify_12px.ImageColor3 = Color3.fromRGB(239, 239, 239)
+Top_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+Top_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+Top_Roundify_12px.SliceScale = 0.120
+
+Left.Name = "Left"
+Left.Parent = Main
+Left.BackgroundColor3 = Color3.fromRGB(239, 239, 239)
+Left.BorderSizePixel = 0
+Left.Position = UDim2.new(0, 0, 0.12396694, 0)
+Left.Size = UDim2.new(0, 36, 0, 24)
+Left.Font = Enum.Font.SourceSans
+Left.Text = " "
+Left.TextColor3 = Color3.fromRGB(0, 0, 0)
+Left.TextSize = 14.000
+
+Right.Name = "Right"
+Right.Parent = Main
+Right.BackgroundColor3 = Color3.fromRGB(239, 239, 239)
+Right.BorderSizePixel = 0
+Right.Position = UDim2.new(0.90476191, 0, 0.12396694, 0)
+Right.Size = UDim2.new(0, 36, 0, 24)
+Right.Font = Enum.Font.SourceSans
+Right.Text = " "
+Right.TextColor3 = Color3.fromRGB(0, 0, 0)
+Right.TextSize = 14.000
+
+Title.Name = "Title"
+Title.Parent = Main
+Title.BackgroundColor3 = Color3.fromRGB(239, 239, 239)
+Title.BackgroundTransparency = 1.000
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.0185185075, 0, 0.02892562, 0)
+Title.Size = UDim2.new(0, 116, 0, 39)
+Title.Font = Enum.Font.SourceSansLight
+Title.Text = "Moon Hub"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+Exit.Name = "Exit"
+Exit.Parent = Main
+Exit.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Exit.BackgroundTransparency = 1.000
+Exit.BorderSizePixel = 0
+Exit.Position = UDim2.new(0.904999971, 0, 0.0579999983, 0)
+Exit.Size = UDim2.new(0, 23, 0, 25)
+Exit.Font = Enum.Font.SourceSans
+Exit.Text = " "
+Exit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Exit.TextSize = 14.000
+Exit.MouseButton1Down:Connect(function()
+	Main:Destroy()
+end)
+
+Exit_Roundify_12px.Name = "Exit_Roundify_12px"
+Exit_Roundify_12px.Parent = Exit
+Exit_Roundify_12px.Active = true
+Exit_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+Exit_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Exit_Roundify_12px.BackgroundTransparency = 1.000
+Exit_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+Exit_Roundify_12px.Selectable = true
+Exit_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+Exit_Roundify_12px.Image = "rbxassetid://3570695787"
+Exit_Roundify_12px.ImageColor3 = Color3.fromRGB(255, 0, 0)
+Exit_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+Exit_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+Exit_Roundify_12px.SliceScale = 0.120
+
+HomeScreen.Name = "HomeScreen"
+HomeScreen.Parent = Main
+HomeScreen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HomeScreen.BackgroundTransparency = 1.000
+HomeScreen.Position = UDim2.new(0, 0, 0.223140493, 0)
+HomeScreen.Size = UDim2.new(0, 378, 0, 188)
+
+WarningTitle.Name = "WarningTitle"
+WarningTitle.Parent = HomeScreen
+WarningTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WarningTitle.BackgroundTransparency = 1.000
+WarningTitle.Position = UDim2.new(0.346560836, 0, 0.0212765951, 0)
+WarningTitle.Size = UDim2.new(0, 234, 0, 26)
+WarningTitle.Font = Enum.Font.SourceSansLight
+WarningTitle.Text = "WARNING"
+WarningTitle.TextColor3 = Color3.fromRGB(0, 0, 0)
+WarningTitle.TextScaled = true
+WarningTitle.TextSize = 14.000
+WarningTitle.TextWrapped = true
+
+Warning.Name = "Warning"
+Warning.Parent = HomeScreen
+Warning.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Warning.BackgroundTransparency = 1.000
+Warning.Position = UDim2.new(0.346560836, 0, 0.186170205, 0)
+Warning.Size = UDim2.new(0, 234, 0, 136)
+Warning.Font = Enum.Font.SourceSansLight
+Warning.Text = "This warning has popped up because the game you're currently playing isn't on Moon Hub's game list. If this warning has popped up and you're on a game that's on the list, please message vil on ROBLOX about the problem."
+Warning.TextColor3 = Color3.fromRGB(0, 0, 0)
+Warning.TextScaled = true
+Warning.TextSize = 14.000
+Warning.TextWrapped = true
+Warning.TextYAlignment = Enum.TextYAlignment.Top
+
+--Place Function--
+
+--Jailbreak
+if game.PlaceId == 606849621 then
+	loadstring(game:HttpGet(('https://pastebin.com/raw/BLZAxJwc'),true))()
+	Main:Destroy()
+end
+
+--Arsenal
+if game.PlaceId == 286090429 then
+	loadstring(game:HttpGet(('https://pastebin.com/raw/NKMYiyMW'),true))()
+	Main:Destroy()
+end
+
+--Tower Of Hell
+if game.PlaceId == 1962086868 then
+	loadstring(game:HttpGet(('https://pastebin.com/raw/i5TdBw3F'),true))()
+	Main:Destroy()
+end
+
+--Murder Mystery
+if game.PlaceId == 142823291 then
+	loadstring(game:HttpGet(('https://pastebin.com/raw/aY7d4VJt'),true))()
+	Main:Destroy()
+end
+
+--Shinobi Life 2
+if game.PlaceId == 4616652839 then
+	loadstring(game:HttpGet(('https://pastebin.com/raw/vU6as4Gf'),true))()
+	Main:Destroy()
+end
+
+--Impostor
+if game.PlaceId == 5702949743 then
+	loadstring(game:HttpGet(('https://pastebin.com/raw/CTpzXXQ8'),true))()
+	Main:Destroy()
+end
+
+--Bloxburg
+if game.PlaceId == 185655149 then
+	loadstring(game:HttpGet(('https://pastebin.com/raw/zs0v79PM'),true))()
+	Main:Destroy()
+end
